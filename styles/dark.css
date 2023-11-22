@@ -8,12 +8,12 @@
   --bcg-color: #000028;
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
-  --accent-color-title: #FF0070;
+  --accent-color-bcg: #FF0070;
   --font: 'IBM Plex Mono', sans-serif;
   --text-color-main-title: #DB00FF;
   --text-color-main: #F1B2CE;
   --text-color-decor: #000028;
-  --padding-main: 10px;
+  --dec-element-visibility: visible;
 }
 
 /* общая разметка страницы */
@@ -37,7 +37,7 @@
 
 .title {
   color: var(--text-color-main-title, #DB00FF);
-  text-shadow: 4px 4px 0px var(--accent-color, #FF0070);
+  text-shadow: 4px 4px 0px var(--accent-color-bcg, #FF0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -45,7 +45,7 @@
 }
 
 .accent-color__title {
-  color: var(--accent-color-title, #FF0070);
+  color: var(--accent-color, #FF0070);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -54,7 +54,7 @@
 
 .title-decor {
   color: var(--text-color-decor, #000028);
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color-bcg, #FF0070);
 }
 
 .title-decor_normal-weight {
@@ -63,7 +63,7 @@
 
 .text-shadow {
   text-decoration: none;
-  text-shadow: 2px 2px 0px var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0px var(--accent-color-bcg, #FF0070);
 }
 
 .text-link:hover {
@@ -108,6 +108,7 @@
 }
 
 .decorative-element {
+  visibility: var(--dec-element-visibility, visible);
   color: var(--accent-color, #FF0070);
   top: var(--padding-main, 10px);
   right: calc(2 * var(--padding-main, 10px));
@@ -253,7 +254,7 @@
 /* медиазапросы для экрана 768px */
 
 @media (min-width: 768px) {
-  .page.theme_dark {
+  :root {
     --padding-main: 20px;
   }
 
