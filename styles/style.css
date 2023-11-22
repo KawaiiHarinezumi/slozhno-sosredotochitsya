@@ -27,7 +27,7 @@
 }
 
 .accent-color__title {
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color-title, #FF0070);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

@@ -5,11 +5,12 @@
 */
 
 .page.theme_light {
-  --bcg-color: #FFF1F7;;
+  --bcg-color: #FFF1F7;
   --cover-image: url(../images/cover-image-light.png);
   --accent-color: #FF8DCB;
+  --accent-color-title: #353430;
   --font: 'IBM Plex Mono', sans-serif;
-  --text-color-main-title: #FFC2E6;;
+  --text-color-main-title: #FFC2E6;
   --text-color-main: #353430;
   --text-color-decor: #353430;
   --padding-main: 10px;
@@ -17,15 +18,16 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bcg-color: #FFF1F7;;
+    --bcg-color: #FFF1F7;
     --cover-image: url(../images/cover-image-light.png);
     --accent-color: #FF8DCB;
+    --accent-color-title: #353430;
     --font: 'IBM Plex Mono', sans-serif;
-    --text-color-main-title: #FFC2E6;;
+    --text-color-main-title: #FFC2E6;
     --text-color-main: #353430;
     --text-color-decor: #353430;
     --padding-main: 10px;    
-    }
+  }
 }
 
 
@@ -58,7 +60,7 @@
 }
 
 .accent-color__title {
-  color: var(--accent-color);
+  color: var(--accent-color-title);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
